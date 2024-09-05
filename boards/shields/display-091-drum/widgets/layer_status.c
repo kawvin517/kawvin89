@@ -82,7 +82,7 @@ static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
     // lv_obj_set_style_transform_angle(label, LV_PART_MAIN, LV_STATE_DEFAULT, 900);
     
     // 设置标签的中心点，旋转将围绕这个点进行
-    // lv_obj_set_style_local_transform_origin(label, LV_PART_MAIN, LV_STATE_DEFAULT, LV_TRANSFORM_ORIGIN_CENTER);
+    // lv_obj_set_style_local_transform_origin(label, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_TRANSFORM_ORIGIN_CENTER);
  
     // 设置标签的位置
     // lv_obj_set_pos(label, 60, 6); // 根据需要调整位置
@@ -100,7 +100,8 @@ static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
 
         lv_label_set_text(label, text);
     }
-    lv_obj_set_style_transform_angle(label, 900, 0);
+    // lv_obj_set_style_transform_angle(label, 900, 0);
+    lv_obj_set_style_local_angle(label, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT,45);
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
  
 }
