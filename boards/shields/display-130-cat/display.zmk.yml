@@ -1,0 +1,7 @@
+file_format: "1"
+id: dongle_display_130_cat
+name: dongle_display_130_cat
+type: shield
+url: https://github.com/englmaxi/zmk-config
+requires: 
+  - i2c_oled

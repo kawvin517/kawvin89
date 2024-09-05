@@ -1,0 +1,155 @@
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property. You can also use the `cmake-args` property to
+# pass flags to the build command and `artifact-name` to assign a name to
+# distinguish build outputs from each other:
+#
+# board: [ "nice_nano_v2" ]
+# shield: [ "corne_left", "corne_right" ]
+# include:
+#   - board: bdn9_rev2
+#   - board: nice_nano_v2
+#     shield: reviung41
+#   - board: nice_nano_v2
+#     shield: corne_left
+#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+#     artifact-name: corne_left_with_logging
+#
+---
+include:
+
+  # 这里是添加dongle-display，https://github.com/englmaxi/zmk-dongle-display
+
+  # 【方案1】  dongle：无，display：系统自带-横向
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_left
+  #   artifact-name: kawvin_split89_1_NoDongle_Left
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_1_NoDongle_Right
+
+  # # 【方案2】  dongle：无，display：猫咪-横向(128*32)
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_left display_091_cat
+  #   artifact-name: kawvin_split89_2_NoDongle_LeftWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_2_NoDongle_Right
+  
+  # 【方案3】  dongle：无，display：敲鼓-竖向(128*32) By Kawvin
+  - board: nice_nano_v2
+    shield: kawvin_split89_central_left display_091_drum
+    artifact-name: kawvin_split89_3_NoDongle_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_3_NoDongle_Right
+
+  #   # 【方案4】  dongle：有（display:系统自带-横向(128*64))，display：无
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle
+  #   artifact-name: kawvin_split89_4_Dongle
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left_nodisplay
+  #   artifact-name: kawvin_split89_4_Dongle_LeftNoDisplay
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_4_Dongle_Right
+
+  # # 【方案5】  dongle：有（display:猫咪-横向(128*64))，display：无
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_cat
+  #   artifact-name: kawvin_split89_5_DongleWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left_nodisplay
+  #   artifact-name: kawvin_split89_5_DongleWithCat_LeftNoDisplay
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_5_DongleWithCat_Right
+
+  # # 【方案6】  dongle：有（display:猫咪-横向(128*64))，display：系统自带-横向
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_cat
+  #   artifact-name: kawvin_split89_6_DongleWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left
+  #   artifact-name: kawvin_split89_6_DongleWithCat_Left
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_6_DongleWithCat_Right
+
+  # # 【方案7】  dongle：有（display:猫咪-横向(128*64))，display：猫咪-横向(128*32)
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_cat
+  #   artifact-name: kawvin_split89_7_DongleWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left display_091_cat
+  #   artifact-name: kawvin_split89_7_DongleWithCat_LeftWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_7_DongleWithCat_Right
+
+  #     # 【方案8】  dongle：有（display:猫咪-横向(128*64))，display：敲鼓-竖向(128*32) By Kawvin
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_cat
+  #   artifact-name: kawvin_split89_8_DongleWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left display_091_drum
+  #   artifact-name: kawvin_split89_8_DongleWithCat_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_8_DongleWithCat_Right
+  
+# # 【方案4】  dongle：有（display:无)，display：系统自带-横向
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle_nodisplay
+  #   artifact-name: kawvin_split89_4_DongleNoDispaly
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left
+  #   artifact-name: kawvin_split89_4_DongleNoDispaly_Left
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_4_DongleNoDispaly_Right
+
+  # # 【方案5】  dongle：有（display:无)，display：猫咪-横向(128*32)
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle_nodisplay
+  #   artifact-name: kawvin_split89_5_DongleNoDispaly
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left display_091_cat
+  #   artifact-name: kawvin_split89_5_DongleNoDispaly_LeftWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_5_DongleNoDispaly_Right
+  
+  # # 【方案6】  dongle：有（display:无)，display：敲鼓-竖向(128*32) By Kawvin
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle_nodisplay
+  #   artifact-name: kawvin_split89_6_DongleNoDispaly
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left display_091_drum
+  #   artifact-name: kawvin_split89_6_DongleNoDispaly_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_6_DongleNoDispaly_Right
+  
+
+  # 【方案9】  dongle：有（display:敲鼓-竖向(128*64) By Kawvin)，display：无
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_drum
+  #   artifact-name: kawvin_split89_9_donglewithdrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left_nodisplay
+  #   artifact-name: kawvin_split89_9_donglewithdrum_leftnodisplay
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  #   artifact-name: kawvin_split89_9_donglewithdrum_right
+
+  # # 【方案10】  dongle：有（display:敲鼓-竖向(128*64) By Kawvin)，display：敲鼓-竖向(128*32) By Kawvin
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_central_dongle display_130_drum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_left  display_091_drum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_peripheral_right
+  
