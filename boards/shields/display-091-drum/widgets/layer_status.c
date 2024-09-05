@@ -102,7 +102,7 @@ static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
     }
     // lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
     // lv_obj_center(label);
-    // lv_obj_set_style_transform_angle(label, 900, 0);
+    lv_obj_set_style_transform_angle(label, 50, 0);
     
  
 }
