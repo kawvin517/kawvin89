@@ -41,9 +41,9 @@ include:
   - board: nice_nano_v2
     shield: kawvin_split89_central_left display_091_drum
     artifact-name: kawvin_split89_3_NoDongle_LeftWithDrum
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_peripheral_right
-  #   artifact-name: kawvin_split89_3_NoDongle_Right
+  - board: nice_nano_v2
+    shield: kawvin_split89_peripheral_right
+    artifact-name: kawvin_split89_3_NoDongle_Right
 
   #   # 【方案4】  dongle：有（display:系统自带-横向(128*64))，display：无
   # - board: nice_nano_v2
