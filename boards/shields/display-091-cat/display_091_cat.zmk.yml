@@ -1,6 +1,6 @@
 file_format: "1"
-id: dongle_display_130_cat
-name: dongle_display_130_cat
+id: display_091_cat
+name: display_091_cat
 type: shield
 url: https://github.com/englmaxi/zmk-config
 requires: 
