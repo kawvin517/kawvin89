@@ -17,12 +17,6 @@ if SHIELD_KAWVIN_SPLIT89_LEFT || SHIELD_KAWVIN_SPLIT89_RIGHT
 config ZMK_SPLIT
     default y
 
-endif
-
-
-
-if SHIELD_KAWVIN_SPLIT89_LEFT || SHIELD_KAWVIN_SPLIT89_RIGHT
-
 config ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
@@ -30,6 +24,8 @@ config ZMK_RGB_UNDERGLOW
 endif
 
 
+
+if SHIELD_KAWVIN_SPLIT89_LEFT
 
 if ZMK_DISPLAY
 
@@ -44,7 +40,6 @@ choice ZMK_DISPLAY_WORK_QUEUE
 endchoice
 
 endif # ZMK_DISPLAY
-
 
 
 if LVGL
@@ -63,3 +58,5 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif
