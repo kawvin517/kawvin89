@@ -50,7 +50,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     // 层
     zmk_widget_layer_status_init(&layer_status_widget, screen);
-    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_LEFT, 33,2);
+    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_LEFT, 33,1);
     // lv_obj_align_to(zmk_widget_layer_status_obj(&layer_status_widget), zmk_widget_bongo_drum_obj(&bongo_drum_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
 
     // 敲鼓动画
