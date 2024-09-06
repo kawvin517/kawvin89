@@ -8,14 +8,14 @@
 
 &pinctrl {
     // Other pinctrl definitions for other hardware
-    i2c0_default: i2c0_default {
+    i2c1_default: i2c1_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
                     <NRF_PSEL(TWIM_SCL, 0, 20)>;
         };
     };
 
-    i2c0_sleep: i2c0_sleep {
+    i2c1_sleep: i2c1_sleep {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
                     <NRF_PSEL(TWIM_SCL, 0, 20)>;
@@ -24,18 +24,18 @@
     };
 };
 
-&i2c0 {
+&i2c1 {
 	status = "okay";
 	compatible = "nordic,nrf-twi";
-	pinctrl-0 = <&i2c0_default>;
-	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-0 = <&i2c1_default>;
+	pinctrl-1 = <&i2c1_sleep>;
 	pinctrl-names = "default", "sleep";
     
 	oled: ssd1306@3c {
 		compatible = "solomon,ssd1306fb";
 		reg = <0x3c>;
 		label = "DISPLAY";
-		width = <129>;
+		width = <128>;
 		height = <64>;
 		segment-offset = <0>;
 		page-offset = <0>;
