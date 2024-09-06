@@ -11,5 +11,6 @@ features:
   - encoder
   - underglow
 siblings:
-  - kawvin_split89_left
-  - kawvin_split89_right
+  - kawvin_split89_dongle_display_dongle
+  - kawvin_split89_dongle_display_left
+  - kawvin_split89_dongle_display_right
