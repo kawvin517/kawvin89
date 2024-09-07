@@ -32,12 +32,14 @@
 	pinctrl-names = "default", "sleep";
     
 	oled: ssd1306@3c {
-		compatible = "solomon,ssd1306fb";
+		//compatible = "solomon,ssd1306fb";   //0.91   0.96
+        compatible = "sinowealth,sh1106";   //1.30
 		reg = <0x3c>;
 		label = "Dongle_DISPLAY";
 		width = <128>;
 		height = <64>;
-		segment-offset = <0>;
+		//segment-offset = <0>;   //0.91   0.96
+        segment-offset = <2>;   //1.30
 		page-offset = <0>;
 		display-offset = <0>;
 		//multiplex-ratio = <31>; //128*32
