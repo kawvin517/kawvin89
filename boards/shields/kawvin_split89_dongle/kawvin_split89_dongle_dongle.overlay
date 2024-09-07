@@ -12,7 +12,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
-        zephyr,display = &oled;
+        //zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
