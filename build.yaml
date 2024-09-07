@@ -62,15 +62,15 @@ include:
   #   artifact-name: kawvin_split89_dongle_21_Right
 
   # # 【方案22】  dongle：有（不使用display)，display：猫咪-横向(128*32)
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_dongle
-    artifact-name: kawvin_split89_dongle_22_Dongle
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_left display_091_cat
-    artifact-name: kawvin_split89_dongle_22_LeftWithCat
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_right
-    artifact-name: kawvin_split89_dongle_22_Right
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_dongle
+  #   artifact-name: kawvin_split89_dongle_22_Dongle
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_left display_091_cat
+  #   artifact-name: kawvin_split89_dongle_22_LeftWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_right
+  #   artifact-name: kawvin_split89_dongle_22_Right
 
   # # 【方案23】  dongle：有（不使用display)，display：敲鼓-竖向(128*32) By Kawvin
   # - board: nice_nano_v2
@@ -108,15 +108,15 @@ include:
   #   artifact-name: kawvin_split89_dongle_display_32_Right
 
   # 【方案33】  dongle：有（display:猫咪-横向(128*64))，display：敲鼓-竖向(128*32) By Kawvin
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_dongle display_130_cat
-  #   artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_left display_091_drum
-  #   artifact-name: kawvin_split89_dongle_display_32_LeftWithDrum
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_right
-  #   artifact-name: kawvin_split89_dongle_display_32_Right
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_dongle display_130_cat
+    artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_left display_091_drum
+    artifact-name: kawvin_split89_dongle_display_32_LeftWithDrum
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_right
+    artifact-name: kawvin_split89_dongle_display_32_Right
 
 
   
