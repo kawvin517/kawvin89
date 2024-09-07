@@ -29,7 +29,7 @@ config ZMK_RGB_UNDERGLOW
 
 endif
 
-
+if SHIELD_KAWVIN_SPLIT89_DONGLE_LEFT 
 
 if ZMK_DISPLAY
 
@@ -44,7 +44,6 @@ choice ZMK_DISPLAY_WORK_QUEUE
 endchoice
 
 endif # ZMK_DISPLAY
-
 
 
 if LVGL
@@ -63,3 +62,4 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+endif
