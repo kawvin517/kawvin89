@@ -11,12 +11,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
-//#define QWERT 0
-//#define LAYER1 1
-//#define LAYER2 2
-//#define LAYER3 3
-//#define LAYER4 4
-
 / {
 
     sensors: sensors {

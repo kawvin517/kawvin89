@@ -21,12 +21,6 @@ config ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
 
-endif
-
-
-
-if SHIELD_KAWVIN_SPLIT89_LEFT
-
 if ZMK_DISPLAY
 
 config SSD1306
