@@ -40,9 +40,9 @@
 		segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
-		multiplex-ratio = <31>;
-		//multiplex-ratio = <63>;
-		segment-remap;
+		//multiplex-ratio = <31>; //128*32
+		/multiplex-ratio = <63>; //128*64
+		egment-remap;
 		com-invdir;
 		com-sequential;
         //inversion-on;   // 翻转颜色
