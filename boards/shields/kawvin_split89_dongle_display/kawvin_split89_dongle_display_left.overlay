@@ -123,22 +123,6 @@
             ;
     };
 
-    left_encoder: left_encoder {
-        compatible = "alps,ec11";
-        steps = <80>;
-        a-gpios = <&gpio0  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        status = "okay";
-    };
-
-//    right_encoder: right_encoder {
-//        compatible = "alps,ec11";
-//        steps = <80>;
-//        a-gpios = <&gpio0  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-//        b-gpios = <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-//        //status = "disabled";
-//        status = "okay";
-//    };
 };
 
 

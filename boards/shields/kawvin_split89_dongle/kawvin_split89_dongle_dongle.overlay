@@ -10,7 +10,7 @@
 / {
 
     chosen {
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &kscan;
         zmk,matrix-transform = &default_transform;
         //zephyr,display = &oled;
     };
@@ -30,7 +30,7 @@ RC(5,7) RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4)                              RC(
         >;
     };
 
-    mock_kscan: kscan_0 {
+    mkscan: kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
