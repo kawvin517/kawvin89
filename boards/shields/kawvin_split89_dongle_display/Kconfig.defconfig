@@ -17,6 +17,10 @@ if SHIELD_KAWVIN_SPLIT89_DONGLE_DISPLAY_DONGLE || SHIELD_KAWVIN_SPLIT89_DONGLE_D
 config ZMK_SPLIT
     default y
 
+choice BT_CTLR_TX_PWR
+    default BT_CTLR_TX_PWR_PLUS_8
+endchoice
+
 endif
 
 
