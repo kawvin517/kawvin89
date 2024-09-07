@@ -41,7 +41,7 @@ LV_IMG_DECLARE(battery70_icon);
 LV_IMG_DECLARE(battery80_icon);
 LV_IMG_DECLARE(battery90_icon);
 LV_IMG_DECLARE(batterycharge_icon);
-// LV_IMG_DECLARE(disconnect_icon);
+LV_IMG_DECLARE(disconnect_icon);
 
 const lv_img_dsc_t *batterys_level[] = {
     &battery00_icon,
@@ -55,7 +55,7 @@ const lv_img_dsc_t *batterys_level[] = {
     &battery80_icon,
     &battery90_icon,
     &batterycharge_icon,
-    // &disconnect_icon,
+    &disconnect_icon,
 };
 
 struct battery_state {
@@ -167,7 +167,7 @@ int zmk_widget_peripheral_battery_status_init(struct zmk_widget_peripheral_batte
         // lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
         // lv_obj_add_flag(battery_label, LV_OBJ_FLAG_HIDDEN);
 
-        lv_img_set_src(image_canvas, batterys_level[9]);
+        lv_img_set_src(image_canvas, batterys_level[11]);
     }
 
     sys_slist_append(&widgets, &widget->node);
