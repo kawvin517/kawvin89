@@ -6,4 +6,3 @@ config SHIELD_KAWVIN_SPLIT89_LEFT
 
 config SHIELD_KAWVIN_SPLIT89_RIGHT
     def_bool $(shields_list_contains,kawvin_split89_right)
-

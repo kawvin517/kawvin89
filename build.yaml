@@ -70,16 +70,16 @@ include:
   #   shield: kawvin_split89_dongle_right
   #   artifact-name: kawvin_split89_dongle_22_Right
 
-  # 【方案23】  dongle：有（不使用display)，display：敲鼓-竖向(128*32) By Kawvin
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_dongle
-    artifact-name: kawvin_split89_dongle_23_Dongle
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_left display_091_drum
-    artifact-name: kawvin_split89_dongle_23_LeftWithDrum
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_right
-    artifact-name: kawvin_split89_dongle_23_Right
+  # # 【方案23】  dongle：有（不使用display)，display：敲鼓-竖向(128*32) By Kawvin
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_dongle
+  #   artifact-name: kawvin_split89_dongle_23_Dongle
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_left display_091_drum
+  #   artifact-name: kawvin_split89_dongle_23_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_right
+  #   artifact-name: kawvin_split89_dongle_23_Right
 
 # 三、【有dongle，使用display】， 在 dongle.conf 进行打开，键盘不使用display
   # #【方案21】  dongle：有（display:系统自带-横向(128*64))，display：无
@@ -94,16 +94,16 @@ include:
   #   shield: kawvin_split89_dongle_display_right
   #   artifact-name: kawvin_split89_dongle_display_31_Right
 
-  # 【方案32】  dongle：有（display:猫咪-横向(128*64))，display：无,除了关闭conf外，还要注销overlay里的 【zephyr,display = &oled;】
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_display_dongle display_130_cat
-    artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_display_left
-    artifact-name: kawvin_split89_dongle_display_32_Left
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_display_right
-    artifact-name: kawvin_split89_dongle_display_32_Right
+  # # 【方案32】  dongle：有（display:猫咪-横向(128*64))，display：无,除了关闭conf外，还要注销overlay里的 【zephyr,display = &oled;】
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_display_dongle display_130_cat
+  #   artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_display_left
+  #   artifact-name: kawvin_split89_dongle_display_32_Left
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_display_right
+  #   artifact-name: kawvin_split89_dongle_display_32_Right
 
 
   
