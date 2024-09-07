@@ -48,6 +48,7 @@
 / {
     chosen {
         zmk,kscan = &kscan;
+        zephyr,display = &oled;
         zmk,underglow = &led_strip;
     };
 

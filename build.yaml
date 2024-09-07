@@ -39,12 +39,14 @@ include:
   #   artifact-name: kawvin_split89_12_Right
   
   # # 【方案13】  dongle：无，display：敲鼓-竖向(128*32) By Kawvin
-  - board: nice_nano_v2
-    shield: kawvin_split89_left display_091_drum
-    artifact-name: kawvin_split89_13_LeftWithDrum
-  - board: nice_nano_v2
-    shield: kawvin_split89_right
-    artifact-name: kawvin_split89_13_Right
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_left display_091_drum
+  #   artifact-name: kawvin_split89_13_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_right
+  #   artifact-name: kawvin_split89_13_Right
+
+
 
 # 二、【有dongle，不使用display】,在 dongle.conf 进行关闭，还要注销overlay里的 【zephyr,display = &oled;】，键盘使用display
   # # 【方案31】  dongle：有（不使用display)，display：系统自带-横向  或  关闭
