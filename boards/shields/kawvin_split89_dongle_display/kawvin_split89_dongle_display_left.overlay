@@ -57,7 +57,7 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <40>; /* arbitrary; change at will */
+        chain-length = <88>; /* arbitrary; change at will */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
@@ -66,7 +66,7 @@
 /*
 &i2c1 {
 	status = "okay";
-	compatible = "nordic,nrf-twi";
+	//compatible = "nordic,nrf-twi";
 	pinctrl-0 = <&i2c1_default>;
 	pinctrl-1 = <&i2c1_sleep>;
 	pinctrl-names = "default", "sleep";
@@ -80,10 +80,11 @@
 		segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
-		multiplex-ratio = <21>;
+		multiplex-ratio = <31>;
 		segment-remap;
 		com-invdir;
-		com-sequential;
+		inversion-on;   // 翻转颜色
+		//com-sequential;
 		prechargep = <0x22>;
 	};
 };

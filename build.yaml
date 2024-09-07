@@ -100,12 +100,12 @@ include:
   - board: nice_nano_v2
     shield: kawvin_split89_dongle_display_dongle display_130_cat
     artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_left
-  #   artifact-name: kawvin_split89_dongle_display_32_Left
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_right
-  #   artifact-name: kawvin_split89_dongle_display_32_Right
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_left
+    artifact-name: kawvin_split89_dongle_display_32_Left
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_right
+    artifact-name: kawvin_split89_dongle_display_32_Right
 
   # # 【方案33】  dongle：有（display:猫咪-横向(128*64))，display：敲鼓-竖向(128*32) By Kawvin
   # - board: nice_nano_v2

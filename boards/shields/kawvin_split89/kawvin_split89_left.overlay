@@ -57,7 +57,8 @@
 		multiplex-ratio = <31>;
 		segment-remap;
 		com-invdir;
-		com-sequential;
+		inversion-on;   // 翻转颜色
+		//com-sequential;
 		prechargep = <0x22>;
 	};
 };
