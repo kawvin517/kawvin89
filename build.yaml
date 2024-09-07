@@ -50,16 +50,16 @@ include:
 
 # 二、【有dongle，不使用display】,在 dongle.conf 进行关闭
   # # 【方案31】  dongle：有（不使用display)，display：系统自带-横向  或  关闭
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_dongle
-  #   artifact-name: kawvin_split89_dongle_21_Dongle
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_left
-  #   artifact-name: kawvin_split89_dongle_21_Left
-  #   artifact-name: kawvin_split89_dongle_21_LeftWithDefault    # 带display使用
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_right
-  #   artifact-name: kawvin_split89_dongle_21_Right
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_dongle
+    artifact-name: kawvin_split89_dongle_21_Dongle
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_left
+    # artifact-name: kawvin_split89_dongle_21_Left
+    artifact-name: kawvin_split89_dongle_21_LeftWithDefault    # 带display使用
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_right
+    artifact-name: kawvin_split89_dongle_21_Right
 
   # # 【方案22】  dongle：有（不使用display)，display：猫咪-横向(128*32)
   # - board: nice_nano_v2
@@ -73,15 +73,15 @@ include:
   #   artifact-name: kawvin_split89_dongle_22_Right
 
   # # 【方案23】  dongle：有（不使用display)，display：敲鼓-竖向(128*32) By Kawvin
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_dongle
-    artifact-name: kawvin_split89_dongle_23_Dongle
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_left display_091_drum
-    artifact-name: kawvin_split89_dongle_23_LeftWithDrum
-  - board: nice_nano_v2
-    shield: kawvin_split89_dongle_right
-    artifact-name: kawvin_split89_dongle_23_Right
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_dongle
+  #   artifact-name: kawvin_split89_dongle_23_Dongle
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_left display_091_drum
+  #   artifact-name: kawvin_split89_dongle_23_LeftWithDrum
+  # - board: nice_nano_v2
+  #   shield: kawvin_split89_dongle_right
+  #   artifact-name: kawvin_split89_dongle_23_Right
 
 # 三、【有dongle，使用display】， 在 dongle.conf 进行打开，键盘不使用display
   # #【方案21】  dongle：有（display:系统自带-横向(128*64))，display：无
