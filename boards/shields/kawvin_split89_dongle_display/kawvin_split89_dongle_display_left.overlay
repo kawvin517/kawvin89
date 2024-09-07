@@ -8,6 +8,8 @@
 #include <dt-bindings/led/led.h>
 &pinctrl {
     // Other pinctrl definitions for other hardware
+    
+/*
     i2c1_default: i2c1_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
@@ -22,6 +24,7 @@
             low-power-enable;
         };
     };
+*/
 
     spi3_default: spi3_default {
         group1 {
@@ -60,7 +63,7 @@
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
     };
 };
-
+/*
 &i2c1 {
 	status = "okay";
 	compatible = "nordic,nrf-twi";
@@ -84,11 +87,11 @@
 		prechargep = <0x22>;
 	};
 };
-
+*/
 / {
     chosen {
         zmk,kscan = &kscan;
-        zephyr,display = &oled1;
+        //zephyr,display = &oled1;
         zmk,underglow = &led_strip;
     };
 
