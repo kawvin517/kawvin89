@@ -4,7 +4,7 @@
 if SHIELD_KAWVIN_SPLIT89_DONGLE_DISPLAY_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Kawvin_Split89"
+    default "Ky_DongleDisplay"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
