@@ -97,16 +97,16 @@ include:
   #   artifact-name: kawvin_split89_dongle_display_31_Right
 
   # 【方案32】  dongle：有（display:猫咪-横向(128*64))，display：无,除了关闭conf外
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_dongle display_130_cat
-  #   artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_left
-  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  #   artifact-name: kawvin_split89_dongle_display_32_Left
-  # - board: nice_nano_v2
-  #   shield: kawvin_split89_dongle_display_right
-  #   artifact-name: kawvin_split89_dongle_display_32_Right
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_dongle display_130_cat
+    artifact-name: kawvin_split89_dongle_display_32_DongleWithCat
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_left
+    ##cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: kawvin_split89_dongle_display_32_Left
+  - board: nice_nano_v2
+    shield: kawvin_split89_dongle_display_right
+    artifact-name: kawvin_split89_dongle_display_32_Right
   # - board: nice_nano_v2
   #   shield: kawvin_split89_dongle_display_left  display_091_drum
   #   cmake-args: -DCONFIG_ZMK_DISPLAY=y
