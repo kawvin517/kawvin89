@@ -96,6 +96,13 @@
 //        //status = "disabled";
 //        status = "okay";
 //    };
+    
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        //sensors = <&left_encoder1 &right_encoder1>;
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
 
 &default_transform {

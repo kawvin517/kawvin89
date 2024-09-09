@@ -3,11 +3,15 @@
 
 if SHIELD_KAWVIN_SPLIT89_LEFT
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+if ZMK_SPLIT_ROLE_CENTRAL
+
 config ZMK_KEYBOARD_NAME
     default "Kawvin_Split89"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+endif
 
 endif
 
@@ -39,8 +43,6 @@ config I2C
 #    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 #endchoice
 
-endif # ZMK_DISPLAY
-
 
 if LVGL
 
@@ -58,5 +60,7 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif # ZMK_DISPLAY
 
 endif

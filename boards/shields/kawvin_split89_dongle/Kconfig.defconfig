@@ -1,13 +1,17 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_KAWVIN_SPLIT89_DONGLE_DONGLE
+if SHIELD_KAWVIN_SPLIT89_DONGLE_DONGLE || SHIELD_KAWVIN_SPLIT89_DONGLE_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+if ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_KEYBOARD_NAME
     default "Ky_Dongle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+endif
 
 endif
 
