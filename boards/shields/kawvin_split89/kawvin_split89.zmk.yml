@@ -1,6 +1,6 @@
 file_format: "1"
-id: nano2test
-name: nano2test
+id: kawvin_split89
+name: kawvin_split89
 type: shield
 url: https://github.com/kawvin/zmk-config
 requires: [pro_micro]
@@ -10,3 +10,6 @@ features:
   - display
   - encoder
   - underglow
+siblings:
+  - kawvin_split89_left
+  - kawvin_split89_right

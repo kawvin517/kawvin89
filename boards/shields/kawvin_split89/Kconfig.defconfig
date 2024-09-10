@@ -1,12 +1,35 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+if SHIELD_KAWVIN_SPLIT89_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+if ZMK_SPLIT_ROLE_CENTRAL
+
 config ZMK_KEYBOARD_NAME
-    default "nano2test"
+    default "Kawvin_Split89"
+
+endif
+
+endif
+
+if SHIELD_KAWVIN_SPLIT89_LEFT || SHIELD_KAWVIN_SPLIT89_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+choice BT_CTLR_TX_PWR
+    default BT_CTLR_TX_PWR_PLUS_8
+endchoice
 
 config ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
+endif
+
+if SHIELD_KAWVIN_SPLIT89_LEFT 
 
 if ZMK_DISPLAY
 
@@ -39,3 +62,5 @@ endchoice
 endif # LVGL
 
 endif # ZMK_DISPLAY
+
+endif

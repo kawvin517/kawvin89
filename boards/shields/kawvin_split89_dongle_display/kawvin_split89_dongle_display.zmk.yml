@@ -1,0 +1,16 @@
+file_format: "1"
+id: kawvin_split89
+name: kawvin_split89
+type: shield
+url: https://github.com/kawvin/zmk-config
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
+siblings:
+  - kawvin_split89_dongle_display_dongle
+  - kawvin_split89_dongle_display_left
+  - kawvin_split89_dongle_display_right
