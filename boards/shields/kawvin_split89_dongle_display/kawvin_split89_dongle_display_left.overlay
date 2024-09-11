@@ -22,8 +22,50 @@
             low-power-enable;
         };
     };
+
+    i2c1_default: i2c1_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
+        };
+    };
+
+    i2c1_sleep: i2c1_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
+            low-power-enable;
+        };
+    };
 };
 
+&i2c1 {
+	status = "okay";
+	//compatible = "nordic,nrf-twi";
+	pinctrl-0 = <&i2c1_default>;
+	pinctrl-1 = <&i2c1_sleep>;
+	pinctrl-names = "default", "sleep";
+    
+	oled1: ssd1306@3c {
+		compatible = "solomon,ssd1306fb";   //0.91   0.96
+        //compatible = "sinowealth,sh1106";   //1.30
+		reg = <0x3c>;
+		label = "Dongle_DISPLAY";
+		width = <128>;
+		height = <64>;
+		segment-offset = <0>;   //0.91   0.96
+        //segment-offset = <2>;   //1.30
+		page-offset = <0>;
+		display-offset = <0>;
+		multiplex-ratio = <31>; //128*32
+		//multiplex-ratio = <63>; //128*64
+		segment-remap;
+		com-invdir;
+        inversion-on;   // 翻转颜色
+		//com-sequential;
+		prechargep = <0x22>;
+	};
+};
 
 &spi3 {
     compatible = "nordic,nrf-spim";
@@ -51,7 +93,7 @@
 / {
     chosen {
         zmk,kscan = &kscan;
-        //zephyr,display = &oled1;
+        zephyr,display = &oled1;
         zmk,underglow = &led_strip;
     };
 

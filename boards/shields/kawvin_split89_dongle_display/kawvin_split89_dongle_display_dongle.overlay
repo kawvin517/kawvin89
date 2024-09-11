@@ -91,15 +91,6 @@ RC(5,7) RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4)                              RC(
         status = "okay";
     };
 
-//    right_encoder: right_encoder {
-//        compatible = "alps,ec11";
-//        steps = <80>;
-//        a-gpios = <&gpio0  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-//        b-gpios = <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-//        //status = "disabled";
-//        status = "okay";
-//    };
-
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         //sensors = <&left_encoder1 &right_encoder1>;
