@@ -6,12 +6,8 @@ if SHIELD_KAWVIN_SPLIT89_DONGLE_DISPLAY_DONGLE || SHIELD_KAWVIN_SPLIT89_DONGLE_D
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-if ZMK_SPLIT_ROLE_CENTRAL
-
 config ZMK_KEYBOARD_NAME
     default "Ky_DongleDisplay"
-
-endif
 
 endif
 

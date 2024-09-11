@@ -61,7 +61,7 @@
 		segment-remap;
 		com-invdir;
         inversion-on;   // 翻转颜色
-		//com-sequential;
+		com-sequential;
 		prechargep = <0x22>;
 	};
 };
