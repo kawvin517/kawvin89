@@ -256,13 +256,15 @@
         };
 
         enter {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <54 55>;
+            timeout-ms = <200>;
         };
 
         question {
-            bindings = <&none>;
+            bindings = <&kp QUESTION>;
             key-positions = <63 64>;
+            timeout-ms = <200>;
         };
     };
 
